@@ -3,9 +3,9 @@ import json, sys, subprocess
 import requests
 
 
-LLM_BASE_URL = "http://ip:port/v1"
-LLM_API_KEY = "..."
-LLM_MODEL = "..."
+LLMBASE_URL = "http://localhost:11434/v1"
+LLM_API_KEY  = "ollama"  # или любой строковый ключ
+LLM_MODEL    = "qwen2.5:7b"
 LLM_HEADERS = {"Content-Type": "application/json", "Authorization": f"Bearer {LLM_API_KEY}"}
 MAX_TURNS = 1000
 
