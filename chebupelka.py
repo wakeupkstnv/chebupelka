@@ -3,7 +3,7 @@ import json, sys, subprocess
 import requests
 
 
-LLMBASE_URL = "http://localhost:11434/v1"
+LLM_BASE_URL = "http://localhost:11434/v1"
 LLM_API_KEY  = "ollama"  # или любой строковый ключ
 LLM_MODEL    = "qwen2.5:7b"
 LLM_HEADERS = {"Content-Type": "application/json", "Authorization": f"Bearer {LLM_API_KEY}"}
